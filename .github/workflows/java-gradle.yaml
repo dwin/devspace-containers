@@ -10,9 +10,12 @@ on:
       - "install_tooling.sh"
   workflow_call:
 
+permissions:
+  packages: write
+
 env:
   REGISTRY: ghcr.io
-  IMAGE_REPO: loft-sh/devspace-containers/java-gradle
+  IMAGE_REPO: dwin/devspace-containers/java-gradle
 
 defaults:
   run:

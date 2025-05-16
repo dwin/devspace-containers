@@ -10,9 +10,12 @@ on:
       - "install_tooling.sh"
   workflow_call:
 
+permissions:
+  packages: write
+
 env:
   REGISTRY: ghcr.io
-  IMAGE_REPO: loft-sh/devspace-containers/go
+  IMAGE_REPO: dwin/devspace-containers/go
 
 defaults:
   run:
@@ -25,6 +28,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - tag: 1.24-alpine
           - tag: 1.23-alpine
           - tag: 1.22-alpine
           - tag: 1.21-alpine

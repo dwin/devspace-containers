@@ -9,10 +9,13 @@ on:
       - ".github/workflows/alpine.yaml"
       - "install_tooling.sh"
   workflow_call:
+  
+permissions:
+  packages: write
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_REPO: loft-sh/devspace-containers/alpine
+  IMAGE_REPO: dwin/devspace-containers/alpine
 
 defaults:
   run:
