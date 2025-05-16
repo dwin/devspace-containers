@@ -9,7 +9,8 @@ on:
       - ".github/workflows/java-maven.yaml"
       - "install_tooling.sh"
   workflow_call:
-
+  workflow_dispatch:
+    
 permissions:
   packages: write
 

@@ -9,6 +9,7 @@ on:
       - ".github/workflows/python.yaml"
       - "install_tooling.sh"
   workflow_call:
+  workflow_dispatch:
 
 permissions:
   packages: write
@@ -34,6 +35,9 @@ jobs:
           - tag: 3.9-alpine
           - tag: 3.10-alpine
           - tag: 3.11-alpine
+          - tag: 3.12-alpine
+          - tag: 3.13-alpine
+          
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3

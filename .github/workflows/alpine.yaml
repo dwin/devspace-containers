@@ -9,6 +9,7 @@ on:
       - ".github/workflows/alpine.yaml"
       - "install_tooling.sh"
   workflow_call:
+  workflow_dispatch:
   
 permissions:
   packages: write

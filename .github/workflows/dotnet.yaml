@@ -9,7 +9,7 @@ on:
       - ".github/workflows/dotnet.yaml"
       - "install_tooling.sh"
   workflow_call:
-
+  workflow_dispatch:
 permissions:
   packages: write
 
