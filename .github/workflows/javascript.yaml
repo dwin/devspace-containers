@@ -34,7 +34,7 @@ jobs:
           - tag: 17-alpine
           - tag: 16-alpine
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772
